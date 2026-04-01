@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "Baron Pro - Global Betting Matrix HQ",
+  "version": "15.1",
+  "description": "Professional 14-Guarantee Matrix Engine & Automation for Football Pools",
+  "permissions": ["activeTab", "scripting", "tabs", "storage"],
+  "action": { "default_popup": "popup.html" },
+  "content_scripts": [
+    {
+      "matches": ["*://*.nesine.com/sportoto*"],
+      "js": ["content.js"],
+      "run_at": "document_start"
+    }
+  ]
+}
